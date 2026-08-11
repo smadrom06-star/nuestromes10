@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -97,13 +97,12 @@
             margin-bottom: 10px;
         }
 
-        .flork {
+        /* Contenedor para el Flork de código */
+        .flork-container {
             width: 120px;
-            height: auto;
-            margin-top: 5px;
+            height: 120px;
+            margin: 5px auto 0 auto;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
         }
     </style>
 </head>
@@ -127,8 +126,21 @@
 
         <div class="detalles-amor">❤️❤️❤️</div>
 
-        <!-- ENLACE CORREGIDO AL FLORK ENAMORADO EN BLANCO Y NEGRO CON CORAZÓN REDONDO -->
-        <img class="flork" src="https://i.postimg.cc/mD7J4hS2/flork-corazon.png" alt="Flork enamorado">
+        <!-- FLORK DIBUJADO CON CÓDIGO PURO (Nunca se va a romper ni borrar) -->
+        <div class="flork-container">
+            <svg viewBox="0 0 100 100" width="100%" height="100%">
+                <!-- Cuerpo del Flork -->
+                <path d="M 20,90 Q 25,30 50,30 Q 75,30 75,65 Q 75,75 70,90" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+                <!-- Ojos -->
+                <circle cx="45" cy="45" r="2.5" fill="#000000"/>
+                <circle cx="58" cy="45" r="2.5" fill="#000000"/>
+                <!-- Brazos sosteniendo el corazón -->
+                <path d="M 32,60 Q 45,65 50,58" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+                <path d="M 68,63 Q 55,68 50,58" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+                <!-- Corazón rojo grande -->
+                <path d="M 50,58 C 48,50 38,50 42,60 L 50,68 L 58,60 C 62,50 52,50 50,58 Z" fill="#ff4d4d" stroke="#cc0029" stroke-width="1"/>
+            </svg>
+        </div>
     </div>
 
 </body>
